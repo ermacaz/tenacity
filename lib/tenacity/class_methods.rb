@@ -419,7 +419,7 @@ module Tenacity
         object_id.to_s
       elsif object_id.nil?
         nil
-      elsif [Fixnum, Integer].include?(object_id.class)
+      elsif [Integer].include?(object_id.class)
         object_id
       else
         object_id.to_s
